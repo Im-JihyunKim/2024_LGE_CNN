@@ -366,7 +366,7 @@ def main(configs):
             save_checkpoint(configs.save_dir, model)  # 앞서 정의해두었던 함수 호출
 
     # 최종적으로 선택된 모델에 대한 값 확인
-    print(f"Best Accuracy:{best_acc:.2f} | Best Epoch:{best_epoch}")
+    print(f"Best Valid Accuracy:{best_acc:.2f} | Best Epoch:{best_epoch}")
 
     # 학습 추세 시각화
     if configs.visualize:
